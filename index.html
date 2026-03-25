@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" /> 
+  <title>Mon site</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<body>
+
+    <!-- Barre de navigation -->
+    <nav>
+
+        <!-- LOGO -->
+        <a href="index.html" class="logo">LOGO</a> <!-- On renvoie vers la page d'accueil -->
+
+        <!-- CATEGORIES -->
+        <ul class="nav-categories">
+            <li>New releases</li> 
+            <li>Men</li> 
+            <li>Women</li> 
+            <li>Kids</li> 
+            <li>Sale</li> 
+        </ul>
+
+        <!-- ICÔNES À DROITE -->
+        <div class="nav-icons">
+            <input type="text" placeholder="Search" />
+            <i data-lucide="heart"></i>
+            <i data-lucide="shopping-bag"></i>
+        </div>
+
+    </nav>
+
+    <!-- Bandeau de la page principale -->
+    <section class="bandeau-hero">
+
+        <p class="bandeau-tag">NEW ARRIVAL | LIMITED EDITION</p>
+
+        <h1> ENGINEERED FOR SPEED. BORN FOR STYLE.</h1>
+
+        <p class="bandeau-description">Explore the Spring 2026 collection. The ultimate blend of top-tier tech and urban style. Featuring breathable fabrics, responsive cushioning, and a bold look. </p>
+    </section>
+
+    <main class="contenu-principal">
+
+        <!-- PANNEAU FILTRES  -->
+        <aside class="filtres">
+            <p>
+                <!-- BOUTON permettant de supprimer les filtres actifs -->
+                <button class="btn-filtres">Clear Filters</button>
+
+                <!-- Tout le code suivant permet de créer les filtres -->
+                <div class="filtre-ligne">
+                    <span>Subcategory</span>
+                    <i data-lucide="chevron-down" class="filtre-chevron"></i>
+                </div>
+
+                <div class="filtre-ligne">
+                    <span>Brand</span>
+                    <i data-lucide="chevron-down" class="filtre-chevron"></i>
+                </div>
+
+                <div class="filtre-ligne">
+                    <span>Size</span>
+                    <i data-lucide="chevron-down" class="filtre-chevron"></i>
+                </div>
+
+                <div class="filtre-ligne">
+                    <span>Price</span>
+                    <i data-lucide="chevron-down" class="filtre-chevron"></i>
+                </div>
+
+                <div class="filtre-ligne">
+                    <span>Best For</span>
+                    <i data-lucide="chevron-down" class="filtre-chevron"></i>
+                </div>
+
+                <div class="filtre-ligne">
+                    <span>Drop</span>
+                    <i data-lucide="chevron-down" class="filtre-chevron"></i>
+                </div>
+
+                <div class="filtre-ligne">
+                    <span>Weight</span>
+                    <i data-lucide="chevron-down" class="filtre-chevron"></i>
+                </div>
+
+                <!-- Filtre Couleurs -->
+                <div class="filtre-ligne">
+                    <span>Colors</span>
+                    <i data-lucide="chevron-down" class="filtre-chevron"></i>
+                </div>
+
+                <!-- J'ai choisi 9 couleurs au hasard -->
+                <div class="couleurs-grille">
+                <div class="pastille" style="background:#111111" title="Noir"></div>
+                <div class="pastille" style="background:#dddddd" title="Blanc"></div>
+                <div class="pastille" style="background:#555555" title="Gris"></div>
+                <div class="pastille" style="background:#e34040" title="Rouge"></div>
+                <div class="pastille" style="background:#e07820" title="Orange"></div>
+                <div class="pastille" style="background:#2b3fcc" title="Bleu"></div>
+                <div class="pastille" style="background:#2ca840" title="Vert"></div>
+                <div class="pastille" style="background:#f5e8d0" title="Beige"></div>
+                <div class="pastille" style="background:#9b30cc" title="Violet"></div>
+                </div>
+
+            </p>
+
+        </aside>
+
+        <!-- GRILLE PRODUITS, on répète 9 fois la même chose, pour les chaussures 4 à 6, on rajoute une classe active pour faire apparaitre la barre -->
+        <section class="grille-produits">
+
+            <!-- Carte 1 — SUPERBLAST 3 -->
+            <div>
+                <a class="carte-produit" href="product.html">
+            
+                    <!-- Image du produit -->
+                    <img
+                        src="https://images.asics.com/is/image/asics/1013A177_800_SR_RT_GLB?$sfcc-product$&wid=1146&hei=860" 
+                        alt="SUPERBLAST 3"
+                    />
+
+                    <!-- Vignettes de coloris : J'ai fait le choix de la simplicité, en ne mettant que deux coloris, je m'evite d'avoir un bandeau amovible pour afficher les autres coloris -->
+                    <div class="coloris-liste">
+
+                        <!-- Vignette 1 -->
+                        <div class="coloris-vignette">
+                            <img
+                            src="https://images.asics.com/is/image/asics/1013A177_800_SR_RT_GLB?$sfcc-product$&wid=1146&hei=860"
+                            alt="coloris beige"
+                            />
+                        </div>
+
+                        <!-- Vignette 2 -->
+                        <div class="coloris-vignette">
+                            <img
+                            src="https://images.asics.com/is/image/asics/1011B794_400_SR_RT_GLB?$zoom$"
+                            alt="coloris bleu"
+                        />
+                        </div>
+                    </div>
+                </a>    
+                <!-- Infos du produit. -->
+                <span class="carte-nom">SUPERBLAST 3</span> <!-- Nom du produit -->
+                <span class="carte-description">Unisex running shoes</span> <!-- Description du produit -->
+                <span class="carte-prix">200.00 £</span> <!-- Prix du produit -->
+            </div>    
+
+
+            <!-- Carte 2 — SUPERBLAST 3 (identique à la carte 1) -->
+            <div>
+                <a class="carte-produit" href="index.html">
+                    <img
+                        src="https://images.asics.com/is/image/asics/1013A177_800_SR_RT_GLB?$sfcc-product$&wid=1146&hei=860"
+                        alt="SUPERBLAST 3"
+                    />
+
+                    <!-- Vignettes de coloris -->
+                    <div class="coloris-liste">
+
+                        <!-- Vignette 1 -->
+                        <div class="coloris-vignette">
+                            <img
+                            src="https://images.asics.com/is/image/asics/1013A177_800_SR_RT_GLB?$sfcc-product$&wid=1146&hei=860"
+                            alt="coloris beige"
+                            />
+                        </div>
+
+                        <!-- Vignette 2 -->
+                        <div class="coloris-vignette">
+                            <img
+                            src="https://images.asics.com/is/image/asics/1011B794_400_SR_RT_GLB?$zoom$"
+                            alt="coloris bleu"
+                        />
+                        </div>
+                    </div>
+                </a>
+                    <span class="carte-nom">SUPERBLAST 3</span>
+                    <span class="carte-description">Unisex running shoes</span>
+                    <span class="carte-prix">200.00 £</span>
+
+            </div>
+
+            <div>
+                <!-- Carte 3 — SUPERBLAST 3 -->
+                <a class="carte-produit" href="index.html">
+
+                    <img
+                        src="https://images.asics.com/is/image/asics/1013A177_800_SR_RT_GLB?$sfcc-product$&wid=1146&hei=860"
+                        alt="SUPERBLAST 3"
+                    />
+
+                    <!-- Vignettes de coloris -->
+                    <div class="coloris-liste">
+
+                        <!-- Vignette 1 -->
+                        <div class="coloris-vignette">
+                            <img
+                            src="https://images.asics.com/is/image/asics/1013A177_800_SR_RT_GLB?$sfcc-product$&wid=1146&hei=860"
+                            alt="coloris beige"
+                            />
+                        </div>
+
+                        <!-- Vignette 2 -->
+                        <div class="coloris-vignette">
+                            <img
+                            src="https://images.asics.com/is/image/asics/1011B794_400_SR_RT_GLB?$zoom$"
+                            alt="coloris bleu"
+                        />
+                        </div>
+                    </div>
+                </a>    
+                    <span class="carte-nom">SUPERBLAST 3</span>
+                    <span class="carte-description">Unisex running shoes</span>
+                    <span class="carte-prix">200.00 £</span>
+            </div>    
+            <div>
+
+                <!-- Carte 4 — NOVABLAST 5 -->
+                <a class="carte-produit" href="index.html">
+                    <img
+                        src="https://images.asics.com/is/image/asics/1011B869_020_SR_RT_GLB?$zoom$"
+                        alt="NOVABLAST 5"
+                    />
+                    <div class="coloris-liste">
+
+                        <!-- Vignette 1 -->
+                        <div class="coloris-vignette">
+                            <img 
+                                src="https://images.asics.com/is/image/asics/1011B869_020_SR_RT_GLB?$zoom$" 
+                                alt="coloris gris" 
+                            />
+                        </div>
+
+                        <!-- Vignette "non-dispo" -->
+                        <div class="coloris-vignette non-dispo">
+                            <img
+                                src="https://images.asics.com/is/image/asics/1011B869_020_SR_RT_GLB?$zoom$"
+                                alt="coloris non disponible"
+                            />
+                        </div>
+                    </div>
+                </a>        
+                    <span class="carte-nom">NOVABLAST 5</span>
+                    <span class="carte-description">Unisex running shoes</span>
+                    <span class="carte-prix">200.00 £</span>
+            </div>
+            <div>
+                <!-- Carte 5 — NOVABLAST 5 -->
+                <a class="carte-produit" href="index.html">
+                    <img
+                        src="https://images.asics.com/is/image/asics/1011B869_020_SR_RT_GLB?$zoom$"
+                        alt="NOVABLAST 5"
+                    />
+                    <div class="coloris-liste">
+                        <div class="coloris-vignette">
+                            <img 
+                                src="https://images.asics.com/is/image/asics/1011B869_020_SR_RT_GLB?$zoom$" 
+                                alt="coloris gris" 
+                            />
+                        </div>
+
+                        <div class="coloris-vignette non-dispo">
+                            <img
+                                src="https://images.asics.com/is/image/asics/1011B869_020_SR_RT_GLB?$zoom$"
+                                alt="coloris non disponible"
+                            />
+                        </div>
+                    </div>
+                </a>
+                    <span class="carte-nom">NOVABLAST 5</span>
+                    <span class="carte-description">Unisex running shoes</span>
+                    <span class="carte-prix">200.00 £</span>
+        
+            </div>  
+            <div>  
+                <!-- Carte 6 — NOVABLAST 5 -->
+                <a class="carte-produit" href="index.html">
+                    <img
+                        src="https://images.asics.com/is/image/asics/1011B869_020_SR_RT_GLB?$zoom$"
+                        alt="NOVABLAST 5"
+                    />
+                    <div class="coloris-liste">
+                        <div class="coloris-vignette">
+                            <img 
+                                src="https://images.asics.com/is/image/asics/1011B869_020_SR_RT_GLB?$zoom$" 
+                                alt="coloris gris" 
+                            />
+                        </div>
+
+                        <div class="coloris-vignette non-dispo">
+                            <img
+                                src="https://images.asics.com/is/image/asics/1011B869_020_SR_RT_GLB?$zoom$"
+                                alt="coloris non disponible"
+                            />
+                        </div>
+                    </div>
+                </a>    
+                    <span class="carte-nom">NOVABLAST 5</span>
+                    <span class="carte-description">Unisex running shoes</span>
+                    <span class="carte-prix">200.00 £</span>
+            </div>
+            <div>
+                <!-- Carte 7 — SUPERBLAST 3 -->
+                <a class="carte-produit" href="product.html">
+            
+                    <!-- Image du produit -->
+                    <img
+                        src="https://images.asics.com/is/image/asics/1013A177_800_SR_RT_GLB?$sfcc-product$&wid=1146&hei=860" 
+                        alt="SUPERBLAST 3"
+                    />
+
+                    <!-- Vignettes de coloris  -->
+                    <div class="coloris-liste">
+
+                        <!-- Vignette 1 -->
+                        <div class="coloris-vignette">
+                            <img
+                            src="https://images.asics.com/is/image/asics/1013A177_800_SR_RT_GLB?$sfcc-product$&wid=1146&hei=860"
+                            alt="coloris beige"
+                            />
+                        </div>
+
+                        <!-- Vignette 2 -->
+                        <div class="coloris-vignette">
+                            <img
+                            src="https://images.asics.com/is/image/asics/1011B794_400_SR_RT_GLB?$zoom$"
+                            alt="coloris bleu"
+                        />
+                        </div>
+                    </div>
+                </a>
+                    <!-- Infos du produit. -->
+                    <span class="carte-nom">SUPERBLAST 3</span> <!-- Nom du produit -->
+                    <span class="carte-description">Unisex running shoes</span> <!-- Description du produit -->
+                    <span class="carte-prix">200.00 £</span> <!-- Prix du produit -->
+
+            </div>
+            <div>
+                <!-- Carte 8 — SUPERBLAST 3  -->
+
+                <a class="carte-produit" href="index.html">
+                    <img
+                        src="https://images.asics.com/is/image/asics/1013A177_800_SR_RT_GLB?$sfcc-product$&wid=1146&hei=860"
+                        alt="SUPERBLAST 3"
+                    />
+
+                    <!-- Vignettes de coloris -->
+                    <div class="coloris-liste">
+
+                        <!-- Vignette 1 -->
+                        <div class="coloris-vignette">
+                            <img
+                            src="https://images.asics.com/is/image/asics/1013A177_800_SR_RT_GLB?$sfcc-product$&wid=1146&hei=860"
+                            alt="coloris beige"
+                            />
+                        </div>
+
+                        <!-- Vignette 2 -->
+                        <div class="coloris-vignette">
+                            <img
+                            src="https://images.asics.com/is/image/asics/1011B794_400_SR_RT_GLB?$zoom$"
+                            alt="coloris bleu"
+                        />
+                        </div>
+                    </div>
+                </a>
+                    <span class="carte-nom">SUPERBLAST 3</span>
+                    <span class="carte-description">Unisex running shoes</span>
+                    <span class="carte-prix">200.00 £</span>
+
+            </div>
+            <div>
+
+                <!-- Carte 9 — SUPERBLAST 3 -->
+                <a class="carte-produit" href="index.html">
+
+                    <img
+                        src="https://images.asics.com/is/image/asics/1013A177_800_SR_RT_GLB?$sfcc-product$&wid=1146&hei=860"
+                        alt="SUPERBLAST 3"
+                    />
+
+                    <!-- Vignettes de coloris -->
+                    <div class="coloris-liste">
+
+                        <!-- Vignette 1 -->
+                        <div class="coloris-vignette">
+                            <img
+                            src="https://images.asics.com/is/image/asics/1013A177_800_SR_RT_GLB?$sfcc-product$&wid=1146&hei=860"
+                            alt="coloris beige"
+                            />
+                        </div>
+
+                        <!-- Vignette 2 -->
+                        <div class="coloris-vignette">
+                            <img
+                            src="https://images.asics.com/is/image/asics/1011B794_400_SR_RT_GLB?$zoom$"
+                            alt="coloris bleu"
+                        />
+                        </div>
+                    </div>
+                </a>
+                    <span class="carte-nom">SUPERBLAST 3</span>
+                    <span class="carte-description">Unisex running shoes</span>
+                    <span class="carte-prix">200.00 £</span>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+</body>
+</html>

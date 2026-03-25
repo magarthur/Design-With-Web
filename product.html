@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>SUPERBLAST 3</title>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- NAVIGATION (identique au fichier index.html) -->
+  <nav>
+    <a href="index.html" class="logo">LOGO</a>
+
+    <ul class="nav-categories">
+      <li>New releases</li>    
+      <li>Men</li>        
+      <li>Women</li>   
+      <li>Kids</li>    
+      <li>Sale</li>    
+    </ul>
+
+    <div class="nav-icons">
+      <input type="text" placeholder="Search" />
+      <i data-lucide="heart"></i>
+      <i data-lucide="shopping-bag"></i>
+    </div>
+  </nav>
+
+  <!-- BANDEAU MINI -->
+  <div class="bandeau-hero">
+    <p class="bandeau-tag">NEW ARRIVAL | LIMITED EDITION</p>
+  </div>
+
+  <!-- CONTENU PRODUIT
+       Deux colonnes : galerie à gauche, infos à droite.
+       Même principe que contenu-principal sur index.html -->
+  <main class="contenu-produit">
+
+    <!-- COLONNE GAUCHE : galerie photos -->
+    <section class="galerie">
+      <!-- GRANDE PHOTO PRINCIPALE -->
+        <div class="galerie-principale">
+            <img
+                src="https://images.asics.com/is/image/asics/1013A177_800_SR_RT_GLB?$sfcc-product$&wid=1146&hei=860"
+                alt="SUPERBLAST 3 vue principale"
+            />
+        </div>
+
+        <!-- photos subsidières -->
+        <div class="galerie-miniatures">
+
+            <img
+                class="miniature"
+                src="https://images.asics.com/is/image/asics/1013A177_800_SB_FR_GLB?$sfcc-product$&wid=756&hei=567"
+                alt="vue latérale"
+            />
+
+            <img
+                class="miniature"
+                src="https://images.asics.com/is/image/asics/1013A177_800_SB_BK_GLB?$sfcc-product$&wid=756&hei=567"
+                alt="vue semelle"
+            />
+        </div>
+
+    </section>
+
+    <!-- COLONNE DROITE : infos produit -->
+    <aside class="infos-produit">
+      <!-- NOM, DESCRIPTION, PRIX -->
+        <h1 class="produit-nom">SUPERBLAST 3</h1>
+        <p class="produit-description">Unisex running shoes</p>
+        <p class="produit-prix">200.00 £</p>
+
+        <!-- COLORIS -->
+        <div class="produit-coloris">
+            <h3 class="produit-label">Coloris</h3>
+
+            <div class="coloris-liste-produit">
+
+                <!-- Vignette 1 : active par défaut -->
+                <div class="coloris-vignette-produit active">
+                    <img
+                        src="https://images.asics.com/is/image/asics/1013A177_800_SR_RT_GLB?$sfcc-product$&wid=1146&hei=860"
+                        alt="coloris beige"
+                    />
+                </div>
+
+                <!-- Vignette 2 -->
+                <div class="coloris-vignette-produit">
+                    <img
+                        src="https://images.asics.com/is/image/asics/1011B794_400_SR_RT_GLB?$zoom$"
+                        alt="coloris bleu"
+                    />
+                </div>
+
+            </div>
+            
+        </div>
+
+        <!-- PERSONNALISATION -->
+        <div class="produit-personnalisation">
+            <h3 class="produit-label">Personnaliser</h3>
+
+            <!-- Description -->
+            <p class="personnalisation-description">
+                Make it yours. Add a name or number for the perfect personalized gift.
+            </p>
+
+            <!-- Deux champs texte côte à côte -->
+            <div class="personnalisation-champs">
+            <!-- https://www.w3schools.com/tags/tag_input.asp -->
+                <input type="text" placeholder="Pied Gauche" />
+                <input type="text" placeholder="Pied Droit"  />
+
+             </div>
+
+            <!-- On cliquera dessus pous supprimer les champs. -->
+            <p class="personnalisation-supprimer">Tout supprimer</p>
+
+        </div>
+
+        <!-- TAILLES -->
+        <div class="produit-tailles">
+            <h3 class="produit-label">Taille</h3>
+
+            <!-- Grille de boutons.  -->
+            <div class="tailles-grille">
+                <button class="btn-taille">35.5</button>
+                <button class="btn-taille">36</button>
+                <button class="btn-taille">36.5</button>
+                <button class="btn-taille">37</button>
+                <button class="btn-taille">37.5</button>
+                <button class="btn-taille">38</button>
+                <button class="btn-taille">38.5</button>
+                <button class="btn-taille">39</button>
+                <button class="btn-taille">39.5</button>
+                <button class="btn-taille">40</button>
+                <button class="btn-taille">40.5</button>
+                <button class="btn-taille">41</button>
+                <button class="btn-taille">41.5</button>
+                <button class="btn-taille">42</button>
+                <button class="btn-taille">42.5</button>
+                <button class="btn-taille">43</button>
+                <button class="btn-taille">43.5</button>
+                <button class="btn-taille">44</button>
+            </div>
+
+        </div>
+
+        <!-- BOUTONS D'ACTION -->
+        <div class="produit-boutons">
+
+            <!-- Bouton principal -->
+            <button class="btn-panier">Add to cart</button>
+
+            <!-- Bouton secondaire -->
+            <button class="btn-favoris">Add to favorites</button>
+
+        </div>
+
+    </aside>
+
+  </main>
+
+  <script>
+    lucide.createIcons();
+  </script>
+
+</body>
+</html>
