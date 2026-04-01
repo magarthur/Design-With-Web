@@ -6,6 +6,7 @@
 
   <script src="https://unpkg.com/lucide@latest"></script>
   <link rel="stylesheet" href="style.css" />
+  <script src="products.js" defer></script>
 </head>
 
 <body>
@@ -42,62 +43,39 @@
     <!-- COLONNE GAUCHE : galerie photos -->
     <section class="galerie">
       <!-- GRANDE PHOTO PRINCIPALE -->
-        <div class="galerie-principale">
+      <div class="galerie-principale">
             <img
-                src="https://images.asics.com/is/image/asics/1013A177_800_SR_RT_GLB?$sfcc-product$&wid=1146&hei=860"
-                alt="SUPERBLAST 3 vue principale"
+                id="prod-image"
+                src=""
+                alt="Image principale du produit"
             />
-        </div>
+      </div>
 
-        <!-- photos subsidières -->
-        <div class="galerie-miniatures">
-
-            <img
-                class="miniature"
-                src="https://images.asics.com/is/image/asics/1013A177_800_SB_FR_GLB?$sfcc-product$&wid=756&hei=567"
-                alt="vue latérale"
-            />
-
-            <img
-                class="miniature"
-                src="https://images.asics.com/is/image/asics/1013A177_800_SB_BK_GLB?$sfcc-product$&wid=756&hei=567"
-                alt="vue semelle"
-            />
-        </div>
-
+      <!-- J'ai supprimé les photos subsidières, je n'ai pas réussi à les charger -->
     </section>
 
     <!-- COLONNE DROITE : infos produit -->
     <aside class="infos-produit">
       <!-- NOM, DESCRIPTION, PRIX -->
-        <h1 class="produit-nom">SUPERBLAST 3</h1>
-        <p class="produit-description">Unisex running shoes</p>
-        <p class="produit-prix">200.00 £</p>
+      <h1 class="produit-nom" id="prod-nom"></h1>
+        <p class="produit-description" id="prod-desc"></p>
+        <p class="produit-prix" id="prod-prix"></p>
 
         <!-- COLORIS -->
         <div class="produit-coloris">
-            <h3 class="produit-label">Coloris</h3>
+          <h3 class="produit-label">Coloris</h3>
 
-            <div class="coloris-liste-produit">
-
-                <!-- Vignette 1 : active par défaut -->
-                <div class="coloris-vignette-produit active">
-                    <img
-                        src="https://images.asics.com/is/image/asics/1013A177_800_SR_RT_GLB?$sfcc-product$&wid=1146&hei=860"
-                        alt="coloris beige"
-                    />
-                </div>
-
-                <!-- Vignette 2 -->
-                <div class="coloris-vignette-produit">
-                    <img
-                        src="https://images.asics.com/is/image/asics/1011B794_400_SR_RT_GLB?$zoom$"
-                        alt="coloris bleu"
-                    />
-                </div>
-
+          <div class="coloris-liste-produit">
+            <div class="coloris-vignette-produit active">
+                <!-- Je n'ai pas réussi à charger les nouvelles images, j'ai demandé à l'IA qui m'a indiqué que c'était un problème d'ID. Je n'ai pas réussi à comprendre le problème -->
+                <img src="https://images.asics.com/is/image/asics/1013A177_800_SR_RT_GLB?$sfcc-product$&wid=1146&hei=860" alt="coloris beige" />
             </div>
-            
+            <div class="coloris-vignette-produit">
+              <img src="https://images.asics.com/is/image/asics/1011B794_400_SR_RT_GLB?$zoom$" alt="coloris bleu" />
+            </div>
+
+          </div>
+
         </div>
 
         <!-- PERSONNALISATION -->
@@ -109,13 +87,13 @@
                 Make it yours. Add a name or number for the perfect personalized gift.
             </p>
 
-            <!-- Deux champs texte côte à côte -->
+             <!-- Deux champs texte côte à côte -->
             <div class="personnalisation-champs">
-            <!-- https://www.w3schools.com/tags/tag_input.asp -->
+                <!-- https://www.w3schools.com/tags/tag_input.asp -->
                 <input type="text" placeholder="Pied Gauche" />
                 <input type="text" placeholder="Pied Droit"  />
 
-             </div>
+            </div>
 
             <!-- On cliquera dessus pous supprimer les champs. -->
             <p class="personnalisation-supprimer">Tout supprimer</p>
@@ -125,29 +103,10 @@
         <!-- TAILLES -->
         <div class="produit-tailles">
             <h3 class="produit-label">Taille</h3>
-
-            <!-- Grille de boutons.  -->
-            <div class="tailles-grille">
-                <button class="btn-taille">35.5</button>
-                <button class="btn-taille">36</button>
-                <button class="btn-taille">36.5</button>
-                <button class="btn-taille">37</button>
-                <button class="btn-taille">37.5</button>
-                <button class="btn-taille">38</button>
-                <button class="btn-taille">38.5</button>
-                <button class="btn-taille">39</button>
-                <button class="btn-taille">39.5</button>
-                <button class="btn-taille">40</button>
-                <button class="btn-taille">40.5</button>
-                <button class="btn-taille">41</button>
-                <button class="btn-taille">41.5</button>
-                <button class="btn-taille">42</button>
-                <button class="btn-taille">42.5</button>
-                <button class="btn-taille">43</button>
-                <button class="btn-taille">43.5</button>
-                <button class="btn-taille">44</button>
+            
+            <div class="tailles-grille" id="prod-tailles">
             </div>
-
+            
         </div>
 
         <!-- BOUTONS D'ACTION -->
@@ -158,7 +117,7 @@
 
             <!-- Bouton secondaire -->
             <button class="btn-favoris">Add to favorites</button>
-
+            
         </div>
 
     </aside>
